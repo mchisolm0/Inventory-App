@@ -20,7 +20,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Image source={logo} style={styles.logo}></Image>
-      <Text style={styles.instructions}>To share a photo from your phone with a friend, just press the button bellow.</Text>
+      <Text style={styles.instructions}>To share a photo from your phone with a friend, just press the button below.</Text>
       <TouchableOpacity
         onPress={openImagePickerAsync}
         style={styles.button}>
@@ -45,8 +45,10 @@ const styles = StyleSheet.create({
   },
   instructions: {
     color: '#888',
-    fontSize: 18,
+    fontSize: 24,
+    fontWeight: 'bold',
     marginHorizontal: 15,
+    padding: 10,
   },
   button: {
     backgroundColor: 'blue',
